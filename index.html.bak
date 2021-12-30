@@ -18,8 +18,8 @@ body {
 
 #navbar {
   overflow: hidden;
-  background-color: #444444;
-  padding: 5% 10px;
+  background-color: #f1f1f1;
+  padding: 80px 10px;
 transition: all 0.4s ease 0s;
   position: fixed;
   width: 100%;
@@ -39,10 +39,9 @@ transition: all 0.4s ease 0s;
 }
 
 #navbar #logo {
-  font-size: 5pc;
+  font-size: 600%;
   font-weight: bold;
-  transition: all 0.4s ease 0s;
-
+transition: all 0.4s ease 0s;
 }
 
 #navbar a:hover {
@@ -79,10 +78,10 @@ transition: all 0.4s ease 0s;
 
 		function scrollFunction() {
 		  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-			document.getElementById("navbar").style.padding = "3% 10px";
+			document.getElementById("navbar").style.padding = "30px 10px";
 			document.getElementById("logo").style.fontSize = "3pc";
 		  } else {
-			document.getElementById("navbar").style.padding = "5% 10px";
+			document.getElementById("navbar").style.padding = "80px 10px";
 			document.getElementById("logo").style.fontSize = "5pc";
 		  }
 		}
@@ -95,9 +94,9 @@ transition: all 0.4s ease 0s;
       <div id="navbar-right"> <a class="active" href="#home">Home</a> <a href="#contact">Contact</a>
         <a href="#about">About</a> </div>
     </div>
-    <div class="container" style="margin-top:15%;padding:15px 15px 2500px;font-size:30px;background-color:black;">
-      <div class="jumbotron bg-dark" style="padding:30px !important; border-radius:20px !important;">
-        <h1 style="color: white;">Sid Shardanand</h1>
+    <div class="container" style="margin-top:210px;padding:15px 15px 2500px;font-size:30px">
+      <div class="jumbotron bg-light">
+        <h1>Sid [tststtsts]</h1>
       </div>
       <p>this is a test</p>
       <p> </p>
