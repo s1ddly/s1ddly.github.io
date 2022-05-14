@@ -4705,8 +4705,8 @@ textarea.form-control-lg {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #aa5432;
-  background-color: #f8efeb;
+  color: #dee2e6;
+  background-color: rgb(41, 80, 148);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
 .accordion-button:not(.collapsed)::after {
@@ -4736,7 +4736,7 @@ textarea.form-control-lg {
   z-index: 3;
   border-color: #deae9c;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(189, 93, 56, 0.25);
+  box-shadow: 0 0 0 0.25rem #000000;
 }
 
 .accordion-header {
