@@ -12,8 +12,13 @@
 	<meta name="author" content="Sid Shardanand" />
 	<script>
 		function setfade(){
-			document.getElementById('hiddencard').className = 'card mx-auto fadecardin';
+			if (document.getElementById('hiddencard').className == 'card mx-auto fadecardin'){
+				removefade();
+			} else {
+				document.getElementById('hiddencard').className = 'card mx-auto fadecardin';
+			}
 		}
+		
 		function removefade(){
 			document.getElementById('hiddencard').className = 'card mx-auto fadecardout';
 		}
@@ -32,34 +37,38 @@
 
 
     <div class="container">
-    <div class="col-xs-12">
-            <div class="text-center">
-                <div style="padding-bottom: 30px;">
-                    <a href='https://sidshardanand.com/ManOfTheDay/'><button type="button" class="btn btn-outline-light shake" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 800;">Man Of The Day</button></a>
-                </div>
-				<div style="padding-bottom: 30px;">
-                    <a href='https://sidshardanand.com/Resume/'><button type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Resume</button></a>
-                </div>
-                <div style="padding-bottom: 30px;">
-                    <a href='https://github.com/s1ddly'><button type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Github</button></a>
-                </div>
-                <div style="padding-bottom: 30px;">
-                    <a href='https://www.linkedin.com/in/sid-shardanand'><button type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">LinkedIn</button></a>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;" onclick="setfade()">Only Fans &#128064;</button>
-                </div>
-				<div style="padding-bottom: 30px;">
-                    <div class="card mx-auto fadecard" style="width: 80%;" id="hiddencard">
-                        <div class="card-body">
-                            <h2 class="card-title" id="rand_name" onMouseOver="this.style.color='#0d6efd'" onMouseOut="this.style.color='#212529'">Sensitive Content</h2>
-							<div id="rand_content"><p>Are you sure you want to proceed? <a class="btn btn-primary btn-sm" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Yes</a> <button class="btn btn-danger btn-sm" onclick="removefade()">No</button></p></div>
-                        </div>
-                    </div>
+		<div class="col-xs-12">
+				<div class="text-center">
+					<div style="padding-bottom: 30px;">
+						<a href='https://sidshardanand.com/ManOfTheDay/'><button type="button" class="btn btn-outline-light shake" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 800;">Man Of The Day</button></a>
+					</div>
+					<div style="padding-bottom: 30px;">
+						<a href='https://sidshardanand.com/Resume/'><button type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Resume</button></a>
+					</div>
+					<div style="padding-bottom: 30px;">
+						<a href='https://github.com/s1ddly'><button type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Github</button></a>
+					</div>
+					<div style="padding-bottom: 30px;">
+						<a href='https://www.linkedin.com/in/sid-shardanand'><button type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">LinkedIn</button></a>
+					</div>
+					<div>
+						<button type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;" onclick="setfade()">Only Fans &#128064;</button>
+					</div>
+					<div style="padding-bottom: 30px;">
+						<div class="card mx-auto fadecard" style="width: 80%;" id="hiddencard">
+							<div class="card-body">
+								<h2 class="card-title">Sensitive Content</h2>
+								<div id="rand_content"><p>Are you sure you want to proceed? <a class="btn btn-primary btn-sm" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Yes</a> <button class="btn btn-danger btn-sm" onclick="removefade()">No</button></p></div>
+							</div>
+						</div>
+					</div>
 				</div>
-            </div>
+		</div>
     </div>
-    </div>
+	
+	<footer class="fixed-bottom">
+		<a href='mailto:sid@sidshardanand.com'><p style="text-align: center; color: white;">Contact me</p></a>
+	</footer>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
