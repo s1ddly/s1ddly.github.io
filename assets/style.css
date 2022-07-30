@@ -94,3 +94,63 @@ h6 {
 	  background-repeat: no-repeat;
 	  background-position: 50% 50%;
   }
+
+.button-sensitive {
+  
+}
+
+@-webkit-keyframes fadeIn { 
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  20% { opacity: 0; }
+  40% { opacity: 0.3; }
+  60% { opacity: 0.5; }
+  80% { opacity: 0.9; }
+  100% { opacity: 1; }
+}
+
+.fadecard { 
+  display: none;
+  opacity: 0%;
+}
+
+.fadecardin {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeOut { 
+  100% { opacity: 0; }
+  80% { opacity: 0; }
+  60% { opacity: 0.3; }
+  40% { opacity: 0.5; }
+  20% { opacity: 0.9; }
+  0% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  100% { opacity: 0; }
+  80% { opacity: 0; }
+  60% { opacity: 0.3; }
+  40% { opacity: 0.5; }
+  20% { opacity: 0.9; }
+  0% { opacity: 1; }
+}
+
+.fadecardout {
+  -webkit-animation-name: fadeOut;
+  -webkit-animation-duration: 1s;
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  opacity: 0%;
+}
