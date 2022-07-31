@@ -101,19 +101,19 @@ h6 {
 
 @-webkit-keyframes fadeIn { 
   0% { opacity: 0; }
-  20% { opacity: 0; }
-  40% { opacity: 0.3; }
-  60% { opacity: 0.5; }
-  80% { opacity: 0.9; }
+  20% { opacity: 0.2; }
+  40% { opacity: 0.4; }
+  60% { opacity: 0.6; }
+  80% { opacity: 0.8; }
   100% { opacity: 1; }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  20% { opacity: 0; }
-  40% { opacity: 0.3; }
-  60% { opacity: 0.5; }
-  80% { opacity: 0.9; }
+    0% { opacity: 0; }
+  20% { opacity: 0.2; }
+  40% { opacity: 0.4; }
+  60% { opacity: 0.6; }
+  80% { opacity: 0.8; }
   100% { opacity: 1; }
 }
 
@@ -124,33 +124,33 @@ h6 {
 
 .fadecardin {
   -webkit-animation-name: fadeIn;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 0.25s;
   animation-name: fadeIn;
-  animation-duration: 1s;
+  animation-duration: 0.25s;
 }
 
 @-webkit-keyframes fadeOut { 
   100% { opacity: 0; }
-  80% { opacity: 0; }
-  60% { opacity: 0.3; }
-  40% { opacity: 0.5; }
-  20% { opacity: 0.9; }
+  80% { opacity: 0.2; }
+  60% { opacity: 0.4; }
+  40% { opacity: 0.6; }
+  20% { opacity: 0.8; }
   0% { opacity: 1; }
 }
 
 @keyframes fadeOut {
   100% { opacity: 0; }
-  80% { opacity: 0; }
-  60% { opacity: 0.3; }
-  40% { opacity: 0.5; }
-  20% { opacity: 0.9; }
+  80% { opacity: 0.2; }
+  60% { opacity: 0.4; }
+  40% { opacity: 0.6; }
+  20% { opacity: 0.8; }
   0% { opacity: 1; }
 }
 
 .fadecardout {
   -webkit-animation-name: fadeOut;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 0.25s;
   animation-name: fadeOut;
-  animation-duration: 1s;
+  animation-duration: 0.25s;
   opacity: 0%;
 }
