@@ -154,3 +154,7 @@ h6 {
   animation-duration: 0.25s;
   opacity: 0%;
 }
+
+.cardpadfix{
+  padding: 0.25rem !important;
+}
