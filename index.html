@@ -18,11 +18,13 @@
 				removefade();
 			} else {
 				document.getElementById('hiddencard').className = 'card mx-auto fadecardin';
+				document.getElementById('hiddencard').style = "width: 80%; display:block;"
 			}
 		}
 		
 		function removefade(){
 			document.getElementById('hiddencard').className = 'card mx-auto fadecardout';
+			document.getElementById('hiddencard').style = "width: 80%; display:none;"
 		}
 	</script>
 </head>
