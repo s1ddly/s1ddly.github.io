@@ -13,18 +13,18 @@
 	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 	
 	<script>
-		function setfade(){
-			if (document.getElementById('hiddencard').className == 'card mx-auto fadecardin'){
-				removefade();
+		function setfade(inid){
+			if (document.getElementById(inid).className == 'card mx-auto fadecardin'){
+				removefade(inid);
 			} else {
-				document.getElementById('hiddencard').className = 'card mx-auto fadecardin';
-				document.getElementById('hiddencard').style = "width: 80%; display:block;"
+				document.getElementById(inid).className = 'card mx-auto fadecardin';
+				document.getElementById(inid).style = "width: 80%; display:block;"
 			}
 		}
 		
-		function removefade(){
-			document.getElementById('hiddencard').className = 'card mx-auto fadecardout';
-			document.getElementById('hiddencard').style = "width: 80%; display:none;"
+		function removefade(inid){
+			document.getElementById(inid).className = 'card mx-auto fadecardout';
+			document.getElementById(inid).style = "width: 80%; display:none;"
 		}
 	</script>
 </head>
@@ -65,10 +65,10 @@
 						<a href='https://sidshardanand.com/ManOfTheDay/'><button type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;">Man Of The Day</button></a>
 					</div>
 					<div>
-						<button type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;" onclick="setfade()">Instagram Filters</button>
+						<button type="button" class="btn btn-outline-light" style="width: 80%; padding-top:10px; padding-bottom:10px; font-weight: 600;" onclick="setfade('insta-filters')">Instagram Filters</button>
 					</div>
 					<div style="padding-bottom: 30px; ">
-						<div class="card mx-auto fadecard" style="width: 80%; display:none;" id="hiddencard">
+						<div class="card mx-auto fadecard" style="width: 80%; display:none;" id="insta-filters">
 							<div class="card-body cardpadfix">
 								<div id="instagream_filter_content">
 									<p>These links only work on your phone :)</p>
