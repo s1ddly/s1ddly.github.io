@@ -24,7 +24,11 @@
 		
 		function removefade(inid){
 			document.getElementById(inid).className = 'card mx-auto fadecardout';
-			document.getElementById(inid).style = "width: 80%; display:none;"
+			delay(250).then(() => document.getElementById(inid).style = "width: 80%; display:none;");
+		}
+		
+		function delay(time) {
+			return new Promise(resolve => setTimeout(resolve, time));
 		}
 	</script>
 </head>
